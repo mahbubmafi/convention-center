@@ -1,38 +1,122 @@
-.moto{
+*{
+    font-family: poppins;
+}
+
+
+.moto {
     margin: auto 0;
 }
 
-.packages> h2{
+.packages>h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.card-body > p > img{
+.p-card-body>p>img {
     margin-right: 5px;
 }
-.card-body > a{
-    text-align: center;
-}
-.card{
+
+.p-card {
     border: none;
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
-.card-button{
+
+.card-button {
     background-color: lightblue;
-    color: #3F87F5;
-    border-radius: 20px;
+    border-radius: 24px;
     border: none;
     padding: 10px 50px;
-    font-weight: 500;
-    margin-top:10px;
+    font-weight: 700;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #3F87F5;
+}
+
+.card-button>p {
+    margin: 0;
+}
+
+.p-card:hover {
+    background-color: #3F87F5;
+    color: white;
+    margin-top: -30px;
+    transition: .7s;
+    box-shadow: 0px 27px 20px -15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 27px 20px -15px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 27px 20px -15px rgba(0, 0, 0, 0.5);
+}
+
+.p-card:hover .card-button {
+    background-color: white;
+    color: #3F87F5;
+    transition: .7s;
+}
+
+.r-card {
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-content>h6 {
+    color: red;
+}
+.footer{
+    background-color: Black;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    color: white;
+}
+
+.apps-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (max-width:576px) {
-    .moto-image{
+    .moto-image {
         margin-top: 50px;
         order: 2;
     }
-    .moto{
+
+    .moto {
         text-align: center;
+        order: 1;
+    }
+
+    .faq-img{
+        order: 1;
+    }
+    .faq-content{
+        order: 2;
+    }
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .rights{
+        order: 2;
+    }
+    .apps{
         order: 1;
     }
 
