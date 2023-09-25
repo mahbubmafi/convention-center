@@ -2,17 +2,18 @@
     font-family: poppins;
 }
 
-
+/* Moto Section  */
 .moto {
     margin: auto 0;
 }
 
+/* Package Section  */
 .packages>h2 {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.p-card-body>p>img {
+.card-body>p>img {
     margin-right: 5px;
 }
 
@@ -53,6 +54,7 @@
     transition: .7s;
 }
 
+/* Client Review Section  */
 .r-card {
     border-radius: 15px;
     border: none;
@@ -74,6 +76,8 @@
 .card-content>h6 {
     color: red;
 }
+
+/* Footer section  */
 .footer{
     background-color: Black;
 }
@@ -90,7 +94,9 @@
     gap: 10px;
 }
 
+/* Responsive design section  */
 @media screen and (max-width:576px) {
+    /* moto section  */
     .moto-image {
         margin-top: 50px;
         order: 2;
@@ -100,13 +106,15 @@
         text-align: center;
         order: 1;
     }
-
+    /* FAQ section  */
     .faq-img{
         order: 1;
     }
     .faq-content{
         order: 2;
     }
+
+    /* Footer Section  */
     .footer-container{
         flex-direction: column;
         justify-content: center;
